@@ -1,6 +1,6 @@
-const Manager = require("../w/Employee-template-engine/lib/Manager");
-const Engineer = require("../w/Employee-template-engine/lib/Engineer");
-const Intern = require("../w/Employee-template-engine/lib/Intern");
+const Manager = require("./lib/Employee");
+const Engineer = require("./lib/Engineer");
+const Intern = require(".lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -8,7 +8,7 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "dist");
 const outputPath = path.join(Dist_DIR, "team.html");
 
-const render = require("./Employee-template-engine/lib/renderedoutput");
+const render = require("./lib/renderedoutput");
 
 const employeeList = [];
 
