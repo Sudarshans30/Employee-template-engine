@@ -1,4 +1,4 @@
-const { default: test } = require("node:test");
+
 const Intern = require("../lib/Intern");
 
 test("can set school via constructor", () => {
