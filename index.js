@@ -88,7 +88,7 @@ async function init() {
     if (addMore.add) {
         init();
     } else {
-        fs.writeFile(outputPath, render(employeeList), (err) => {
+        fs.writeFile(outputPath, render(employeeList.map(e => e.toString()).join("")), (err) => {
             if (err) {
                 console.log(err);
                 } else {
@@ -97,8 +97,6 @@ async function init() {
                 });
                 }
             }
-
-            init();
-
+init();
 
 
